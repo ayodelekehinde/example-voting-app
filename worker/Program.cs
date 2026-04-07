@@ -16,7 +16,7 @@ namespace Worker
         {
             try
             {
-                var pgsql = OpenDbConnection("Server=db;Port=5432;Database=app;Username=app;Password=PGUqVDeX67Mp2yZOJBtQK7XenalQg2AzRIPJsxHydqr2oY0i0mcDwNMDDR7TVRJ6;");
+                var pgsql = OpenDbConnection("Server=db-rw.voting.svc.cluster.local;Port=5432;Database=app;Username=app;Password=PGUqVDeX67Mp2yZOJBtQK7XenalQg2AzRIPJsxHydqr2oY0i0mcDwNMDDR7TVRJ6;");
                 var redisConn = OpenRedisConnection("redis");
                 var redis = redisConn.GetDatabase();
 
